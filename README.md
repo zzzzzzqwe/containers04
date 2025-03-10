@@ -72,8 +72,48 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 
 ![image](screenshots/Screenshot_6.png)
 
+Обновляю страницу и вижу:
 
+![image](screenshots/Screenshot_7.png)
 
+Я вижу то, что было введено в `index.html` прошлыми командами, а именно `echo <h1>Hello, World!</h1>`
+
+5. Выполняю следующие команды:
+
+```bash
+cd /etc/apache2/sites-enabled/
+cat 000-default.conf
+```
+
+- `cd /etc/apache2/sites-enabled/` - меняет директорию на указанную (папка, в которой хранятся конфигурационные файлы виртуальных хостов Apache.)
+- `cat 000-default.conf` - выводит (командой `cat`) настройки основного виртуального хоста Apache (`000-default.conf` - конфигурационный файл виртуального хоста Apache, который отвечает за работу веб-сервера)
+
+![image](screenshots/Screenshot_8.png)
+
+Я вижу конфигурационный файл `Apache`, который определяет виртуальный хост, который обрабатывает HTTP-запросы на порт 80. Он устанавливает корневую директорию сайта `/var/www/html`, указывает email администратора `webmaster@localhost`, настраивает логирование `error.log и access.log`.
+
+Закрываю окно командой `exit`.
+
+![image](screenshots/Screenshot_9.png)
+
+6. Просматриваю список текущих контейнеров
+
+```bash
+docker ps -a
+```
+
+Команда `docker ps -a` выводит список всех контейнеров в моей системе, включая активные, остановленные и завершившиеся. Флаг `-a` показывает полную информацию, такую как имена, ID, статус и т.д.
+
+![image](screenshots/Screenshot_10.png)
+
+Удаляю контейнер `containers04`
+
+```bash
+docker rm containers04
+```
+Команда `docker rm containers04` удаляет контейнер с именем `containers04`
+
+![image](screenshots/Screenshot_11.png)
 
 
 ## Выводы
