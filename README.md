@@ -119,3 +119,8 @@ docker rm containers04
 
 ## Выводы
 В ходе лабораторной работы я изучил основные команды `Debian/Ubuntu`, а также познакомился с `Docker` и его основными функциями. Я запустил контейнер с `Ubuntu`, установил веб-сервер `Apache` и успешно развернул простую веб-страницу с текстом `"Hello, World!"`.
+
+## Библиография
+1. Курс Контейнеризация и виртуализация [https://moodle.usm.md/mod/assign/view.php?id=282116](https://moodle.usm.md/mod/assign/view.php?id=282116)
+2. Гайд по Apache [https://httpd.apache.org/docs/2.4/getting-started.html](https://httpd.apache.org/docs/2.4/getting-started.html)
+3. Гайд по работе с Apache + Ubuntu [https://ubuntu.com/tutorials/install-and-configure-apache#1-overview](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)
