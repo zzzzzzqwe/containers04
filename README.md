@@ -49,10 +49,32 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 
 ![image](screenshots/Screenshot_4.png)
 
+3. Открываю браузер и перехожу на страницу `http://localhost:8000/`. Вижу следующее: 
 
+![image](screenshots/Screenshot_5.png)
 
+Это стандартная страница Apache, оторая отображается при успешной установке и запуске веб-сервера. Это является подтверждением, что сервер работает корректно.
 
+4. Выполняю следующие команды:
 
+```bash
+ls -l /var/www/html/
+echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
+```
+
+`ls -l /var/www/html/`
+
+- `ls` – команда для просмотра содержимого директории.
+- `-l` – выводит подробную информацию о файлах (права доступа, владелец и тд).
+- `/var/www/html/` – стандартная директория для размещения веб-страниц в Apache.
+
+`echo '<h1>Hello, World!</h1>' > /var/www/html/index.html`
+
+- `echo '<h1>Hello, World!</h1>` – выводит строку "<h1>Hello, World!</h1>".
+- `>` – перенаправляет этот вывод в файл, перезаписывая его (если файл уже существовал, его содержимое будет удалено).
+- `/var/www/html/index.html` – файл, в который записывается строка
+
+![image](screenshots/Screenshot_6.png)
 
 
 
