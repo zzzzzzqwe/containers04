@@ -24,7 +24,10 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 
 `apt update` - обновляет список доступных пакетов и их версий.
 
-- APT (Advanced Package Tool) получает актуальную информацию о пакетах из репозиториев
+- `APT (Advanced Package Tool)` получает актуальную информацию о пакетах из репозиториев
+
+![image](screenshots/Screenshot_2.png)
+
 
 `apt install apache2 -y` -  устанавливает веб-сервер Apache.
 
@@ -34,6 +37,8 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 
 - `-y` – флаг, который автоматически подтверждает установку
 
+![image](screenshots/Screenshot_3.png)
+
 `service apache2 start` - запускает службу Apache.
 
 - `service` – утилита для управления системными сервисами.
@@ -42,7 +47,7 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 
 - `start` – команда для запуска сервиса.
 
-
+![image](screenshots/Screenshot_4.png)
 
 
 
