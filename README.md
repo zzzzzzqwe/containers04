@@ -111,6 +111,7 @@ docker ps -a
 ```bash
 docker rm containers04
 ```
+
 Команда `docker rm containers04` удаляет контейнер с именем `containers04`
 
 ![image](screenshots/Screenshot_11.png)
