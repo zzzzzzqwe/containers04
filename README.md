@@ -32,9 +32,7 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 `apt install apache2 -y` -  устанавливает веб-сервер Apache.
 
 - `apt install` – команда для установки пакетов
-
 - `apache2` – имя пакета Apache (веб-сервера)
-
 - `-y` – флаг, который автоматически подтверждает установку
 
 ![image](screenshots/Screenshot_3.png)
@@ -42,9 +40,7 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 `service apache2 start` - запускает службу Apache.
 
 - `service` – утилита для управления системными сервисами.
-
 - `apache2` – имя службы веб-сервера.
-
 - `start` – команда для запуска сервиса.
 
 ![image](screenshots/Screenshot_4.png)
@@ -70,7 +66,7 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 
 `echo '<h1>Hello, World!</h1>' > /var/www/html/index.html`
 
-- `echo '<h1>Hello, World!</h1>` – выводит строку "<h1>Hello, World!</h1>".
+- `echo '<h1>Hello, World!</h1>` – выводит строку `<h1>Hello, World!</h1>`.
 - `>` – перенаправляет этот вывод в файл, перезаписывая его (если файл уже существовал, его содержимое будет удалено).
 - `/var/www/html/index.html` – файл, в который записывается строка
 
